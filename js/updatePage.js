@@ -46,7 +46,7 @@ var getWeatherClass = (code) => {
             return 'rainy';
         case 23: case 24:
             return 'breezy';    
-        case 26: case 28:
+        case 26: case 27: case 28:
             return 'cloudy';
         case 29: case 30: case 33: case 34: 
             return 'fair';
