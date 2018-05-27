@@ -44,7 +44,6 @@ div#place {
 .input-field .prefix.active {
     color: #fff;
 }
-
 /* ****** */
 /* ICONS */
 i {
@@ -63,12 +62,24 @@ i {
     height: 180px;
     width: 180px;
 }
+img.default {
+    content: url('icons/md-weather-iconset/weather-clouds.png');
+}
 img.sunny {
     content: url('icons/md-weather-iconset/weather-clear.png');
 }
 img.cloudy {
     content: url('icons/md-weather-iconset/weather-clouds.png');    
 }
+img.less-cloudy {
+    content: url('icons/md-weather-iconset/weather-few-clouds.png');    
+}
+img.breezy {
+    content: url('icons/md-weather-iconset/weather-wind.png');    
+}
 img.rainy {
     content: url('icons/md-weather-iconset/weather-showers-day.png');
+}
+img.storm {
+    content: url('icons/md-weather-iconset/weather-storm.png');
 }

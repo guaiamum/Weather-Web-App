@@ -2,7 +2,11 @@ var autocomplete;
 
 var initMap = () => {
     let input = document.getElementById('city');
-    autocomplete = new google.maps.places.Autocomplete(input);
+    let options = {
+        types: ['(cities)'],
+    };
+    
+    autocomplete = new google.maps.places.Autocomplete(input,options);
     autocomplete.addListener('place_changed', getPlace);
 }
 
