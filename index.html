@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Google Material Icons -->  
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- MINE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="row l12 s12 light-blue darken">
+        <div id="main">
+            <i class="material-icons" id="about-icon">info</i>
+            <div class="container input-field" id="place">
+                <i class="material-icons prefix">location_on</i>
+                <input type="text" name="city" id="city">
+            </div>
+            <div class="row container center-align" id="today">
+                <img class="md-xlarge sunny">
+                <div class="container info">
+                    <h1 class="right-align temp">18 °C</h1>
+                    <h3 class="right-align day">Sun</h3>
+                </div>
+            </div>
+        </div>
+      
+        <div class="col l3 s6 light-blue darken-1 upcoming-day">
+            <div class="container center-align" id="forecast-1">
+                <img class="md-large cloudy">
+                <div class="container info">
+                    <h3 class="right-align" id="temp">18 °C</h1>
+                    <h6 class="right-align" id="day">Sun</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col l3 s6 light-blue darken-2 upcoming-day" >
+            <div class="container center-align" id="forecast-2">
+                <img class="md-large rainy"/>
+                <div class="container info">
+                    <h3 class="right-align" id="temp">18 °C</h1>
+                    <h6 class="right-align" id="day">Sun</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col l3 s6 light-blue darken-3 upcoming-day" >
+            <div class="container center-align" id="forecast-3">
+                <img class="md-large rainy"/>
+                <!-- <i class="material-icons md-large sunny">wb_sunny</i> -->
+                <div class="container info">
+                    <h3 class="right-align" id="temp">18 °C</h1>
+                    <h6 class="right-align" id="day">Sun</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col l3 s6 light-blue darken-4 upcoming-day" >
+            <div class="container center-align" id="forecast-4">
+                <img class="md-large rainy"/>
+                <!-- <i class="material-icons md-large sunny">wb_sunny</i> -->
+                <div class="container info">
+                    <h3 class="right-align" id="temp">18 °C</h1>
+                    <h6 class="right-align" id="day">Sun</h3>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    <a href="https://www.yahoo.com/?ilc=401" target="_blank"> <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29"/> </a>
+
+</body>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <!-- Maps Autocomplete -->
+    <script src="js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkHWPAtZxudMa1Bi5DgvbpK1QpR0axhIw&libraries=places&callback=initMap"        async defer></script>
+
+    <!-- Yahoo Weather -->
+    <script src="js/weather.js"></script>
+
+    <!-- Updating Page Content -->
+    <script src="js/updatePage.js"></script>
+
+</html>
+
+
+
+<style type="text/css">div.image {max-width: 256px;max-height: 256px;background-image: 0;}</style>

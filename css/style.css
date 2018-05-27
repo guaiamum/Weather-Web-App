@@ -1,0 +1,74 @@
+:root {
+    --font-color: #fff;
+    --input-color: #fff;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color);
+}
+div#main {
+    height: 70vh;    
+}
+/* ****** */
+/* TODAY */
+div#today {
+    padding-top: 10%; 
+}
+div#today .info{
+    padding-right: 25%;
+}
+div#today .info h1,h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/* ****** */
+/* FORECASTS */
+div.upcoming-day {
+    height: 30vh;
+    padding-top: 3% !important;
+}
+div.upcoming-day .info {
+    padding-right: 15%;
+}
+/* ****** */
+/* INPUTS */
+div#place {
+    margin-top: 0;
+    padding: 0 10%;    
+}
+#place input {
+    color: var(--input-color);
+    border-bottom-color : var(--input-color);
+}
+.input-field .prefix.active {
+    color: #fff;
+}
+
+/* ****** */
+/* ICONS */
+i {
+    color: var(--font-color);    
+}
+#about-icon{
+    cursor: pointer;
+    float: right;
+    margin: 1%;
+}
+.md-large {
+    height: 120px;
+    width: 120px;
+}
+.md-xlarge {
+    height: 180px;
+    width: 180px;
+}
+img.sunny {
+    content: url('icons/md-weather-iconset/weather-clear.png');
+}
+img.cloudy {
+    content: url('icons/md-weather-iconset/weather-clouds.png');    
+}
+img.rainy {
+    content: url('icons/md-weather-iconset/weather-showers-day.png');
+}
