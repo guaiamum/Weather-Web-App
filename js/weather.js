@@ -1,6 +1,12 @@
 var today;
 var forecasts;
 
+/**
+ * Calls yahoo weather api with the given
+ * string correspongind to the city, and 
+ * calls the updatePage function
+ * @param {string} city 
+ */
 var getForecast = (city) => {
     var searchtext = "select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='" + 
         city.replace(/["']/g, "") + "') and u='c'";

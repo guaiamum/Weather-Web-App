@@ -1,3 +1,8 @@
+/**
+ * Extends JQuery to create function that animates 
+ * the given object, and removes classes at the end
+ * making room for future animations or callbacks
+ */
 $.fn.extend({
     animateCss: function(animationName, callback) {
       var animationEnd = (function(el) {

@@ -3,6 +3,8 @@
     --input-color: #fff;
 }
 
+/* ****** */
+/* GENERAL */
 body {
     font-family: 'Raleway', sans-serif;
     color: var(--font-color);
