@@ -12,6 +12,7 @@ var getForecast = (city) => {
             alert("error");
             return;
         }
+        // console.log(data.query.results); //DEBUG
         today = data.query.results.channel.item.condition;
         forecasts = data.query.results.channel.item.forecast.slice(1,5);
         updatePage();

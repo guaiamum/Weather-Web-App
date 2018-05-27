@@ -5,17 +5,31 @@
 var updatePage = () => {
     let todayContainer = $('div#today');
 
-    setWeatherClass(todayContainer,Number(today.code));
-    todayContainer.find('.temp').html(today.temp + ' °C');
-    todayContainer.find('.day').html(today.date.slice(0,3));
-    
+    //animate out
+    todayContainer.animateCss('fadeOut',() => {
+        //changing html
+        setWeatherClass(todayContainer,Number(today.code));
+        todayContainer.find('.temp').html(today.temp + ' °C');
+        todayContainer.find('.day').html(today.date.slice(0,3));
+        //animate in
+        todayContainer.animateCss('fadeIn');
+    });
+
     forecasts.forEach((e, i)=> {
         let container = $('div#forecast-'+(i+1));
-        setWeatherClass(container,Number(e.code));
-        let temp = (Number(e.high)+Number(e.low)/2).toFixed(0);
-        container.find('.temp').html(temp + ' °C');
-        container.find('.day').html(e.day);
+        let temp = (Number(e.high)+Number(e.low)/2).toFixed(0); //average
+        
+        //animate out
+        container.animateCss('fadeOut',() => {
+            //changing html
+            setWeatherClass(container,Number(e.code));
+            container.find('.temp').html(temp + ' °C');
+            container.find('.day').html(e.day);
+            //animate in
+            container.animateCss('fadeIn')
+        });
     });
+
 }
 
 /**

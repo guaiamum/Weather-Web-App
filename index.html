@@ -12,59 +12,62 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- MINE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="row l12 s12 light-blue darken" id="only">
         <div id="main">
-            <i class="material-icons" id="about-icon">info</i>
+            <a href="about.html"><i class="material-icons" id="about-icon">info</i></a>
             <div class="container input-field" id="place">
                 <i class="material-icons prefix">location_on</i>
                 <input type="text" name="city" id="city">
             </div>
             <div class="row container center-align" id="today">
-                <img class="md-xlarge default">
+                <img class="md-xlarge ">
                 <div class="container info">
-                    <h1 class="right-align temp">XX °C</h1>
-                    <h3 class="right-align day">Day</h3>
+                    <h1 class="right-align temp"></h1>
+                    <h3 class="right-align day"></h3>
                 </div>
             </div>
         </div>
       
         <div class="col l3 s6 light-blue darken-1 upcoming-day">
             <div class="container center-align" id="forecast-1">
-                <img class="md-large default">
+                <img class="md-large ">
                 <div class="container info">
-                    <h3 class="right-align temp">Xe °C</h1>
-                    <h6 class="right-align day">Day</h3>
+                    <h3 class="right-align temp"></h1>
+                    <h6 class="right-align day"></h3>
                 </div>
             </div>
         </div>
         <div class="col l3 s6 light-blue darken-2 upcoming-day" >
             <div class="container center-align" id="forecast-2">
-                <img class="md-large default"/>
+                <img class="md-large "/>
                 <div class="container info">
-                    <h3 class="right-align temp">Xe °C</h1>
-                    <h6 class="right-align day">Day</h3>
+                    <h3 class="right-align temp"></h1>
+                    <h6 class="right-align day"></h3>
                 </div>
             </div>
         </div>
         <div class="col l3 s6 light-blue darken-3 upcoming-day" >
             <div class="container center-align" id="forecast-3">
-                <img class="md-large default"/>
+                <img class="md-large "/>
                 <div class="container info">
-                    <h3 class="right-align temp">Xe °C</h1>
-                    <h6 class="right-align day">Day</h3>
+                    <h3 class="right-align temp"></h1>
+                    <h6 class="right-align day"></h3>
                 </div>
             </div>
         </div>
         <div class="col l3 s6 light-blue darken-4 upcoming-day" >
             <div class="container center-align" id="forecast-4">
-                <img class="md-large default"/>
+                <img class="md-large "/>
                 <div class="container info">
-                    <h3 class="right-align temp">Xe °C</h1>
-                    <h6 class="right-align day">Day</h3>
+                    <h3 class="right-align temp"></h1>
+                    <h6 class="right-align day"></h3>
                 </div>
             </div>
         </div>
@@ -87,6 +90,9 @@
 
     <!-- Updating Page Content -->
     <script src="js/updatePage.js"></script>
+
+    <!-- Animations -->
+    <script src="js/animations.js"></script>
 
 </html>
 
