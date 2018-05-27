@@ -7,6 +7,9 @@ body {
     font-family: 'Raleway', sans-serif;
     color: var(--font-color);
 }
+div#only {
+    margin: 0;
+}
 div#main {
     height: 70vh;    
 }
@@ -63,7 +66,7 @@ i {
     width: 180px;
 }
 img.default {
-    content: url('icons/md-weather-iconset/weather-clouds.png');
+    content: url('icons/md-weather-iconset/weather-none-available.png');
 }
 img.sunny {
     content: url('icons/md-weather-iconset/weather-clear.png');
@@ -71,7 +74,7 @@ img.sunny {
 img.cloudy {
     content: url('icons/md-weather-iconset/weather-clouds.png');    
 }
-img.less-cloudy {
+img.fair {
     content: url('icons/md-weather-iconset/weather-few-clouds.png');    
 }
 img.breezy {

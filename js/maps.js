@@ -5,7 +5,7 @@ var initMap = () => {
     let options = {
         types: ['(cities)'],
     };
-    
+
     autocomplete = new google.maps.places.Autocomplete(input,options);
     autocomplete.addListener('place_changed', getPlace);
 }
