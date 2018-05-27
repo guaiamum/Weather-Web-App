@@ -11,7 +11,7 @@ div#only {
     margin: 0;
 }
 div#main {
-    height: 70vh;    
+    min-height: 70vh;    
 }
 /* ****** */
 /* TODAY */
@@ -28,7 +28,7 @@ div#today .info h1,h3{
 /* ****** */
 /* FORECASTS */
 div.upcoming-day {
-    height: 30vh;
+    min-height: 30vh;
     padding-top: 3% !important;
 }
 div.upcoming-day .info {
