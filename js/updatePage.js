@@ -17,7 +17,7 @@ var updatePage = () => {
 
     forecasts.forEach((e, i)=> {
         let container = $('div#forecast-'+(i+1));
-        let temp = (Number(e.high)+Number(e.low)/2).toFixed(0); //average
+        let temp = ((Number(e.high)+Number(e.low))/2).toFixed(0); //average
         
         //animate out
         container.animateCss('fadeOut',() => {
