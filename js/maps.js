@@ -22,6 +22,10 @@ var initMap = () => {
  */
 var getPlace = () => {
     let place = autocomplete.getPlace();
+    if(!place.formatted_address){
+        alert('Invalid Place!');
+        return;
+    }
     getForecast(place.formatted_address);
 }
 
